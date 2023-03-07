@@ -7,6 +7,9 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
+  document.querySelector("#btn").addEventListener("click", () => {
+    document.querySelector("#excuse").innerHTML = excuseGenerator();
+  });
 
   function excuseGenerator() {
     let who = ["Mi perro", "Una foca", "Un gato", "Una ardilla"];
@@ -26,6 +29,6 @@ window.onload = function() {
 
     return `${excuseWho} ${excuseWhat} ${excuseNoun} ${excuseWhen}.`;
   }
-  console.log("Hello Rigo from the console!");
-  document.querySelector("#excuse").innerHTML = excuseGenerator();
+  // console.log("Hello Rigo from the console!");
+  // document.querySelector("#excuse").innerHTML = excuseGenerator();
 };
