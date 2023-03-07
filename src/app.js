@@ -21,13 +21,22 @@ window.onload = function() {
     ];
     let emoji = ["🫣", "🥵", "😕", "😩", "😲"];
 
+    function getRandomElementFromArray(array) {
+      let newArr = array[Math.floor(Math.random() * array.length)];
+      return newArr;
+    }
+
     let excuseWho = who[Math.floor(Math.random() * who.length)];
     let excuseWhat = what[Math.floor(Math.random() * what.length)];
     let excuseWhen = when[Math.floor(Math.random() * when.length)];
     let excuseNoun = noun[Math.floor(Math.random() * noun.length)];
     let excuseEmoji = emoji[Math.floor(Math.random() * emoji.length)];
 
-    return `${excuseWho} ${excuseWhat} ${excuseNoun} ${excuseWhen} ${excuseEmoji}.`;
+    return `${getRandomElementFromArray(who)} ${getRandomElementFromArray(
+      what
+    )} ${getRandomElementFromArray(noun)} ${getRandomElementFromArray(
+      when
+    )} ${getRandomElementFromArray(emoji)}`;
   }
   // console.log("Hello Rigo from the console!");
   // document.querySelector("#excuse").innerHTML = excuseGenerator();
