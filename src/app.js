@@ -10,7 +10,7 @@ window.onload = function() {
   document.querySelector("#excuse").innerHTML = excuseGenerator();
 
   function excuseGenerator() {
-    let who = ["Mi perro", "Una foca", "Un gato", "Una ardilla"];
+    let who = ["mi perro", "una foca", "un gato", "una cotorra"];
     let what = ["ha comido", "ha escondido", "ha roto", "ha tirado"];
     let noun = ["mi tarea", "mis llaves", "mi ordenador"];
     let when = [
@@ -26,17 +26,11 @@ window.onload = function() {
       return newArr;
     }
 
-    let excuseWho = who[Math.floor(Math.random() * who.length)];
-    let excuseWhat = what[Math.floor(Math.random() * what.length)];
-    let excuseWhen = when[Math.floor(Math.random() * when.length)];
-    let excuseNoun = noun[Math.floor(Math.random() * noun.length)];
-    let excuseEmoji = emoji[Math.floor(Math.random() * emoji.length)];
-
     return `${getRandomElementFromArray(who)} ${getRandomElementFromArray(
       what
     )} ${getRandomElementFromArray(noun)} ${getRandomElementFromArray(
       when
-    )} ${getRandomElementFromArray(emoji)}`;
+    )}. ${getRandomElementFromArray(emoji)}`;
   }
   // console.log("Hello Rigo from the console!");
   // document.querySelector("#excuse").innerHTML = excuseGenerator();
