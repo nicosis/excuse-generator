@@ -11,11 +11,11 @@ window.onload = function() {
 
   function excuseGenerator() {
     let who = ["mi perro", "una foca", "un gato", "una cotorra"];
-    let what = ["ha comido", "ha escondido", "ha roto", "ha tirado"];
+    let what = ["ha comido", "ha escondido", "ha roto", "ha botado"];
     let noun = ["mi tarea", "mis llaves", "mi ordenador"];
     let when = [
       "justo antes de la clase",
-      "cuando estaba por salir al trabajo",
+      "justo antes de salir al trabajo",
       "cuando estaba rezando",
       "mientras estaba cenando"
     ];
