@@ -7,9 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  document.querySelector("#btn").addEventListener("click", () => {
-    document.querySelector("#excuse").innerHTML = excuseGenerator();
-  });
+  document.querySelector("#excuse").innerHTML = excuseGenerator();
 
   function excuseGenerator() {
     let who = ["Mi perro", "Una foca", "Un gato", "Una ardilla"];
@@ -21,13 +19,15 @@ window.onload = function() {
       "cuando estaba rezando",
       "mientras estaba cenando"
     ];
+    let emoji = ["🫣", "🥵", "😕", "😩", "😲"];
 
     let excuseWho = who[Math.floor(Math.random() * who.length)];
     let excuseWhat = what[Math.floor(Math.random() * what.length)];
     let excuseWhen = when[Math.floor(Math.random() * when.length)];
     let excuseNoun = noun[Math.floor(Math.random() * noun.length)];
+    let excuseEmoji = emoji[Math.floor(Math.random() * emoji.length)];
 
-    return `${excuseWho} ${excuseWhat} ${excuseNoun} ${excuseWhen}.`;
+    return `${excuseWho} ${excuseWhat} ${excuseNoun} ${excuseWhen} ${excuseEmoji}.`;
   }
   // console.log("Hello Rigo from the console!");
   // document.querySelector("#excuse").innerHTML = excuseGenerator();
