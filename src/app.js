@@ -23,11 +23,8 @@ window.onload = function() {
     let excuseWhat = what[Math.floor(Math.random() * what.length)];
     let excuseWhen = when[Math.floor(Math.random() * when.length)];
 
-    let result = `${excuseWho} ${excuseWhat} ${excuseWhen}.`;
-
-    return result;
+    return `${excuseWho} ${excuseWhat} ${excuseWhen}.`;
   }
-
   console.log("Hello Rigo from the console!");
   document.querySelector("#excuse").innerHTML = excuseGenerator();
 };
