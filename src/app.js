@@ -9,21 +9,22 @@ window.onload = function() {
   //write your code here
 
   function excuseGenerator() {
-    let who = ["the dog", "my granma", "his turtle", "my bird"];
-    let what = ["eat", "pissed", "crushed", "broked"];
+    let who = ["Mi perro", "Una foca", "Un gato", "Una ardilla"];
+    let what = ["ha comido", "ha escondido", "ha roto", "ha tirado"];
+    let noun = ["mi tarea", "mis llaves", "mi ordenador"];
     let when = [
-      "before the class",
-      "right in time",
-      "when I finished",
-      "during my lunch",
-      "while I was praying"
+      "justo antes de la clase",
+      "cuando estaba por salir al trabajo",
+      "cuando estaba rezando",
+      "mientras estaba cenando"
     ];
 
     let excuseWho = who[Math.floor(Math.random() * who.length)];
     let excuseWhat = what[Math.floor(Math.random() * what.length)];
     let excuseWhen = when[Math.floor(Math.random() * when.length)];
+    let excuseNoun = noun[Math.floor(Math.random() * noun.length)];
 
-    return `${excuseWho} ${excuseWhat} ${excuseWhen}.`;
+    return `${excuseWho} ${excuseWhat} ${excuseNoun} ${excuseWhen}.`;
   }
   console.log("Hello Rigo from the console!");
   document.querySelector("#excuse").innerHTML = excuseGenerator();
